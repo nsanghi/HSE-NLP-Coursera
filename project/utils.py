@@ -54,7 +54,7 @@ def load_embeddings(embeddings_path):
     for line in open(embeddings_path, encoding='utf-8'):
         row = line.strip().split('\t')
         embeddings[row[0]] = np.array(row[1:], dtype=np.float32)
-    embeddings_dim = embeddings.keys()[0].shape[0]
+    embeddings_dim = embeddings[list(embeddings)[0]].shape[0]
     
     return embeddings, embeddings_dim
     

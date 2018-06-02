@@ -2,3 +2,7 @@ GoogleNews-vectors-negative300.*
 starspace_embedding
 starspace_embedding.*
 word_embedd*.*
+*.pkl
+thread_embeddings_by_tags/
+eval*
+db.sql*
